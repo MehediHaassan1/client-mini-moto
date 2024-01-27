@@ -1,9 +1,12 @@
 import "./App.css";
+import MainNavbar from "./pages/Shared/Navbar/MainNavbar";
+import TopNavbar from "./pages/Shared/Navbar/TopNavbar";
 
 function App() {
     return (
         <>
-            <h1 className="text-3xl font-bold underline">Hello world!</h1>
+            <TopNavbar></TopNavbar>
+            <MainNavbar></MainNavbar>
         </>
     );
 }
