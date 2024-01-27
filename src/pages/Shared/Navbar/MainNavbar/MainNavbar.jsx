@@ -7,9 +7,9 @@ import logo from "../../../../assets/logo.svg";
 
 const MainNavbar = () => {
     return (
-        <div className="max-w-7xl mx-auto">
-            <header>
-                <nav className="bg-white fixed z-20 right-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div className=" sticky top-0 bg-white">
+            <header className="max-w-7xl mx-auto">
+                <nav className=" z-20 right-0 md:h-16 left-0 border-b border-gray-200 dark:border-gray-600">
                     <ul className="navigation flex flex-wrap justify-between items-center relative mx-auto py-1">
                         <Link className="logo" to="/">
                             <img src={logo} alt="mini moto" className="h-10" />

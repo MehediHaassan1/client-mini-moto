@@ -4,7 +4,7 @@ import { FaRegHeart, FaShoppingBag } from "react-icons/fa";
 
 const TopNavbar = () => {
     return (
-        <div className="max-w-7xl mx-auto border rounded-full h-12 md:h-16 flex items-center justify-center md:justify-between p-2">
+        <div className="max-w-7xl mx-auto border rounded-full h-12 md:h-16 flex items-center justify-center md:justify-between p-2 sticky top-0 ">
             <div className="hidden md:block">
                 <p className="flex items-center gap-1 uppercase text-xs md:text-base lg:text-lg   ">
                     <IoMdCall className="w-5 h-5" /> call us:
