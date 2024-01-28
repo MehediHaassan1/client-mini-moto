@@ -1,8 +1,8 @@
 [
     {
         "type": "car",
-        "name": "Speedy Racer",
-        "picture": "speedy_racer.jpg",
+        "name": "Rolls Royce White Crystal",
+        "picture": "https://i.ibb.co/6ZfjKGG/rolls-royce-crystal-grass.jpg",
         "price": 9.99,
         "rating": 4.5,
         "features": [
@@ -14,8 +14,8 @@
     },
     {
         "type": "sports car",
-        "name": "Turbo Charger GT",
-        "picture": "turbo_charger_gt.jpg",
+        "name": "Velo Turbo GT",
+        "picture": "https://i.ibb.co/4trXV5H/velo-nnow.jpg",
         "price": 14.99,
         "rating": 4.8,
         "features": [
@@ -27,8 +27,8 @@
     },
     {
         "type": "bike",
-        "name": "Extreme Rider",
-        "picture": "extreme_rider.jpg",
+        "name": "KTM Extreme Rider",
+        "picture": "https://i.ibb.co/tp5trCR/ktm-rce-r.jpg",
         "price": 12.49,
         "rating": 4.2,
         "features": [
@@ -40,8 +40,8 @@
     },
     {
         "type": "car",
-        "name": "Mini Cruiser",
-        "picture": "mini_cruiser.jpg",
+        "name": "Bugatti Divo",
+        "picture": "https://i.ibb.co/3CLYg0J/Bugatti-Divo.jpg",
         "price": 8.99,
         "rating": 4.0,
         "features": [
@@ -53,8 +53,8 @@
     },
     {
         "type": "sports car",
-        "name": "Nitro Blaze",
-        "picture": "nitro_blaze.jpg",
+        "name": "Honda Nitro Blaze",
+        "picture": "https://i.ibb.co/PxDLKRY/honda-mob11.jpg",
         "price": 16.99,
         "rating": 4.7,
         "features": [
@@ -66,8 +66,8 @@
     },
     {
         "type": "bike",
-        "name": "Mountain Explorer",
-        "picture": "mountain_explorer.jpg",
+        "name": "Yamaha Mountain Explorer",
+        "picture": "https://i.ibb.co/FJXN9bP/yamaha-r1.jpg",
         "price": 11.99,
         "rating": 4.3,
         "features": [
@@ -79,8 +79,8 @@
     },
     {
         "type": "car",
-        "name": "City Cruiser",
-        "picture": "city_cruiser.jpg",
+        "name": "City Cruiser Insight",
+        "picture": "https://i.ibb.co/wwBjz5G/insight.jpg",
         "price": 10.49,
         "rating": 4.4,
         "features": [
@@ -93,7 +93,7 @@
     {
         "type": "sports car",
         "name": "Super Sonic Speedster",
-        "picture": "super_sonic_speedster.jpg",
+        "picture": "https://i.ibb.co/fDVD8NQ/oracle-redbull.jpg",
         "price": 18.99,
         "rating": 4.9,
         "features": [
@@ -105,8 +105,8 @@
     },
     {
         "type": "bike",
-        "name": "Cruiser Classic",
-        "picture": "cruiser_classic.jpg",
+        "name": "Kawasaki Ninja Cruiser",
+        "picture": "https://i.ibb.co/mBfTGYb/kawasaki-ninjs-hr2.jpg",
         "price": 13.99,
         "rating": 4.1,
         "features": [
@@ -118,8 +118,8 @@
     },
     {
         "type": "car",
-        "name": "Robo Racer",
-        "picture": "robo_racer.jpg",
+        "name": "Inno64-R Resin",
+        "picture": "https://i.ibb.co/1v5N9Yw/inno064-r-resin.jpg",
         "price": 11.99,
         "rating": 4.6,
         "features": [
@@ -131,8 +131,8 @@
     },
     {
         "type": "sports car",
-        "name": "Aero Thunderbolt",
-        "picture": "aero_thunderbolt.jpg",
+        "name": "Philippe Salvet Thunderbolt",
+        "picture": "https://i.ibb.co/0XrySsK/philippe-salvet.jpg",
         "price": 15.49,
         "rating": 4.7,
         "features": [
@@ -145,7 +145,7 @@
     {
         "type": "bike",
         "name": "Galactic Explorer",
-        "picture": "galactic_explorer.jpg",
+        "picture": "https://i.ibb.co/k8RXhck/lenovo-c0017.jpg",
         "price": 14.99,
         "rating": 4.4,
         "features": [
@@ -157,8 +157,8 @@
     },
     {
         "type": "car",
-        "name": "Vintage Roadster",
-        "picture": "vintage_roadster.jpg",
+        "name": "Nissan Skyline GTR",
+        "picture": "https://i.ibb.co/dQ1SZm0/nissan-skyline-gtr.jpg",
         "price": 12.99,
         "rating": 4.3,
         "features": [
@@ -170,8 +170,8 @@
     },
     {
         "type": "sports car",
-        "name": "Lightning Sprinter",
-        "picture": "lightning_sprinter.jpg",
+        "name": "Mazda RX-7 Sprinter",
+        "picture": "https://i.ibb.co/82FBLnN/mazda-rx7.jpg",
         "price": 17.99,
         "rating": 4.8,
         "features": [
@@ -183,8 +183,8 @@
     },
     {
         "type": "bike",
-        "name": "Jungle Explorer",
-        "picture": "jungle_explorer.jpg",
+        "name": "Triumph Explorer",
+        "picture": "https://i.ibb.co/JpL0swN/triumphn.jpg",
         "price": 16.49,
         "rating": 4.5,
         "features": [
@@ -196,8 +196,8 @@
     },
     {
         "type": "car",
-        "name": "Fireball Fury",
-        "picture": "fireball_fury.jpg",
+        "name": "Camaro Fury",
+        "picture": "https://i.ibb.co/dPcscN7/Camaro.jpg",
         "price": 10.99,
         "rating": 4.2,
         "features": [
@@ -209,8 +209,8 @@
     },
     {
         "type": "sports car",
-        "name": "Skyline Dominator",
-        "picture": "skyline_dominator.jpg",
+        "name": "Ferrari Dominator",
+        "picture": "https://i.ibb.co/xFCj6c6/ferrari-Bburago.jpg",
         "price": 19.99,
         "rating": 4.9,
         "features": [
@@ -222,8 +222,8 @@
     },
     {
         "type": "bike",
-        "name": "Rocket Rider",
-        "picture": "rocket_rider.jpg",
+        "name": "Honda RD-0",
+        "picture": "https://i.ibb.co/M2QTyF6/honda.jpg",
         "price": 15.99,
         "rating": 4.6,
         "features": [
