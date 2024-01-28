@@ -8,7 +8,7 @@ const About = () => {
     return (
         <div className="max-w-7xl mx-auto min-h-screen">
             <div className="text-center my-16">
-                <p className="text-base font-bold tracking-widest text-[#A7CAB1]">
+                <p className="text-base font-bold tracking-widest text-[#88B7B5]">
                     Our background
                 </p>
                 <h1 className="text-5xl capitalize font-bold">

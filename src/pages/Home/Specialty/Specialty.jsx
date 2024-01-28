@@ -19,12 +19,12 @@ const Specialty = () => {
         >
             <div className="bg-[#310A31]/50 min-h-screen">
                 <div className="max-w-7xl mx-auto min-h-screen">
-                    <div className="text-center py-16 text-[#A7CAB1]">
+                    <div className="text-center py-16 text-[#88B7B5]">
                         <p className="text-base font-bold tracking-widest ">
-                            Our background
+                           why trust us
                         </p>
                         <h1 className="text-5xl capitalize font-bold ">
-                            about our company
+                            our special powers
                         </h1>
                     </div>
 
