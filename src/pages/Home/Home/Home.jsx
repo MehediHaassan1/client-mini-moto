@@ -4,6 +4,7 @@ import About from "../About/About";
 import Specialty from "../Specialty/Specialty";
 import ExtraSpecialty from "../ExtraSpecialty/ExtraSpecialty";
 import ProductsCategory from "../ProductsCategory/ProductsCategory";
+import Blog from "../Blog/Blog";
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Specialty></Specialty>
             <ExtraSpecialty></ExtraSpecialty>
             <ProductsCategory></ProductsCategory>
+            <Blog></Blog>
         </div>
     );
 };

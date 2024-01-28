@@ -86,7 +86,7 @@ const Specialty = () => {
                         </div>
                     </div>
                     <div className="flex justify-center relative">
-                        <div className="border p-1 rounded-full absolute lg:-bottom-0 xl:-bottom-16 hidden lg:block">
+                        <div className="border p-1 rounded-full absolute lg:-bottom-0 hidden lg:block">
                             <button className="w-10 h-10 bg-[#310A31] rounded-full flex items-center justify-center">
                                 <FaArrowDownLong className="w-4 h-4 text-[#a7cab1]" />
                             </button>
