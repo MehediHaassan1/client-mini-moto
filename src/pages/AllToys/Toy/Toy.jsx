@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Toy = ({ toy }) => {
-    const { name, picture, rating, price } = toy;
+    const { _id, name, picture, rating, price } = toy;
     return (
-        <div className="max-w-md w-full bg-gray-900 shadow-lg rounded-xl p-6 ">
+        <div className="max-w-md w-full bg-gray-900 shadow-lg rounded-xl p-6 my-5">
             <div className="h-60 w-68 mb-3">
                 <img
                     src={picture}
@@ -16,7 +17,7 @@ const Toy = ({ toy }) => {
                     <div className="w-full flex-none text-sm flex items-center text-gray-600">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 text-red-500 mr-1"
+                            className="h-4 w-4 text-[#88B7B5] mr-1"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                         >
@@ -41,8 +42,10 @@ const Toy = ({ toy }) => {
                 </div>
             </div>
             <div className="flex space-x-2 text-sm font-medium justify-start ">
-                <button className="transition ease-in duration-300 inline-flex items-center text-sm font-medium my-2 md:mb-0 bg-purple-500 px-5 py-1 hover:shadow-lg tracking-wider text-white rounded-full hover:bg-purple-600 ">
-                    <span>Add Cart</span>
+                <button className="transition ease-in duration-300 inline-flex items-center text-sm my-2 md:mb-0 bg-[#A7CAB1] px-5 py-1 hover:shadow-lg tracking-wider text-gray-900 rounded-full hover:bg-[#88B7B5] font-bold  ">
+                    <Link to={`/details/${_id}`}>
+                        <span>Add Cart</span>
+                    </Link>
                 </button>
             </div>
         </div>

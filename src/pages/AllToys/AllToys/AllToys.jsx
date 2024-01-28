@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
@@ -6,6 +6,42 @@ import Toy from "../Toy/Toy";
 
 const AllToys = () => {
     const allToys = useLoaderData();
+
+    const [allCars, setAllCars] = useState([]);
+    const [allSportsCar, setAllSportsCar] = useState([]);
+    const [allBike, setAllBike] = useState([]);
+
+    const carUrl = "http://localhost:5000/cars?car=car";
+    const sportsCarUrl =
+        "http://localhost:5000/sports-car?sportsCar=sports_car";
+    const bikeUrl = "http://localhost:5000/bike?bike=bike";
+    const getToyItemByTag = (url, tag) => {
+        if (tag === "car") {
+            fetch(url)
+                .then((res) => res.json())
+                .then((data) => {
+                    setAllCars(data);
+                });
+        } else if (tag === "sports car") {
+            fetch(url)
+                .then((res) => res.json())
+                .then((data) => {
+                    setAllSportsCar(data);
+                });
+        }
+        else if (tag === "bike") {
+            fetch(url)
+                .then((res) => res.json())
+                .then((data) => {
+                    setAllBike(data);
+                });
+        }
+    };
+    useEffect(() => {
+        getToyItemByTag(carUrl, "car");
+        getToyItemByTag(sportsCarUrl, "sports car");
+        getToyItemByTag(bikeUrl, "bike");
+    }, []);
 
     return (
         <div className="max-w-7xl mx-auto">
@@ -33,13 +69,25 @@ const AllToys = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <h2>Any content 1</h2>
+                <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3 my-10">
+                        {allCars.map((toy) => (
+                            <Toy key={toy._id} toy={toy}></Toy>
+                        ))}
+                    </div>
                 </TabPanel>
                 <TabPanel>
-                    <h2>Any content 2</h2>
+                <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3 my-10">
+                        {allSportsCar.map((toy) => (
+                            <Toy key={toy._id} toy={toy}></Toy>
+                        ))}
+                    </div>
                 </TabPanel>
                 <TabPanel>
-                    <h2>Any content 3</h2>
+                <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3 my-10">
+                        {allBike.map((toy) => (
+                            <Toy key={toy._id} toy={toy}></Toy>
+                        ))}
+                    </div>
                 </TabPanel>
             </Tabs>
         </div>
