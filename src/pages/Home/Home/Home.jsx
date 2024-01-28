@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../Banner/Banner";
 import About from "../About/About";
 import Specialty from "../Specialty/Specialty";
+import ExtraSpecialty from "../ExtraSpecialty/ExtraSpecialty";
 
 const Home = () => {
     return (
@@ -9,7 +10,7 @@ const Home = () => {
             <Banner></Banner>
             <About></About>
             <Specialty></Specialty>
-            <div className="min-h-screen">g</div>
+            <ExtraSpecialty></ExtraSpecialty>
         </div>
     );
 };
