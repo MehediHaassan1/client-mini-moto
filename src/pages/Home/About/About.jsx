@@ -69,7 +69,7 @@ const About = () => {
                             </span>
                         </button>
                     </Link>
-                    <Link>
+                    <Link to='/all-toys'>
                         <button className="w-fit flex items-center justify-center border-2 border-[#310A31]  text-[#310A31] py-2 px-4 gap-2 rounded-full uppercase text-xs font-bold tracking-widest">
                             testimonials
                             <span className="w-6 h-6 p-1 flex items-center justify-center rounded-full text-[#310A31] bg-[#A7CAB1]">

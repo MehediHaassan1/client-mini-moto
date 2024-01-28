@@ -18,21 +18,43 @@ const MainNavbar = () => {
 
                         <span className="menu flex [&>li]:pl-8 [&>li>a]:text-center [&>li>a]:relative [&>li>a]:transition [&>li>a]:duration-200 [&>li>a]:ease-in-out [&>li>a]:font-medium [&>li>a]:text-lg">
                             <li>
-                                <Link to="/">Home</Link>
+                                <Link to="/">
+                                    Home
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/">Home</Link>
+                                <Link
+                                
+                                    to="/all-toys"
+                                >
+                                    All Toys
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/">Home</Link>
+                                <Link to="/my-toys">
+                                    My Toys
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/">Home</Link>
+                                <Link to="/add-toy">
+                                    Add A Toy
+                                </Link>
                             </li>
                             <li>
-                                <Link to="/">Home</Link>
+                                <Link to="/blogs">
+                                    Blogs
+                                </Link>
                             </li>
-
+                            <li>
+                                <Link to="/contact">
+                                    Contact
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/login">
+                                    Login
+                                </Link>
+                            </li>
                             <label htmlFor="check" className="close-menu">
                                 <RxCross2 />
                             </label>

@@ -1,0 +1,236 @@
+[
+    {
+        "type": "car",
+        "name": "Speedy Racer",
+        "picture": "speedy_racer.jpg",
+        "price": 9.99,
+        "rating": 4.5,
+        "features": [
+            "Pull-back action",
+            "Realistic design",
+            "Durable material"
+        ],
+        "description": "The Speedy Racer is a sleek and fast toy car that comes with pull-back action for thrilling races. Its realistic design and durable material make it perfect for young car enthusiasts."
+    },
+    {
+        "type": "sports car",
+        "name": "Turbo Charger GT",
+        "picture": "turbo_charger_gt.jpg",
+        "price": 14.99,
+        "rating": 4.8,
+        "features": [
+            "Friction-powered",
+            "Flashing lights",
+            "Sounds effects"
+        ],
+        "description": "Experience the excitement with the Turbo Charger GT, a friction-powered toy sports car. With flashing lights and sound effects, this car brings the thrill of a race track to your playroom."
+    },
+    {
+        "type": "bike",
+        "name": "Extreme Rider",
+        "picture": "extreme_rider.jpg",
+        "price": 12.49,
+        "rating": 4.2,
+        "features": [
+            "Pedal-powered",
+            "Adjustable seat",
+            "Sturdy construction"
+        ],
+        "description": "Take on daring adventures with the Extreme Rider toy bike. This pedal-powered bike features an adjustable seat and sturdy construction for endless hours of imaginative play."
+    },
+    {
+        "type": "car",
+        "name": "Mini Cruiser",
+        "picture": "mini_cruiser.jpg",
+        "price": 8.99,
+        "rating": 4.0,
+        "features": [
+            "Compact size",
+            "Easy to grip",
+            "Vibrant colors"
+        ],
+        "description": "The Mini Cruiser is a compact and easy-to-grip toy car, perfect for little hands. Its vibrant colors add a playful touch, making it an ideal choice for young drivers."
+    },
+    {
+        "type": "sports car",
+        "name": "Nitro Blaze",
+        "picture": "nitro_blaze.jpg",
+        "price": 16.99,
+        "rating": 4.7,
+        "features": [
+            "Remote-controlled",
+            "High-speed",
+            "LED headlights"
+        ],
+        "description": "Unleash the power of speed with the Nitro Blaze remote-controlled toy sports car. Its high-speed capabilities and LED headlights make it a thrilling choice for racing enthusiasts."
+    },
+    {
+        "type": "bike",
+        "name": "Mountain Explorer",
+        "picture": "mountain_explorer.jpg",
+        "price": 11.99,
+        "rating": 4.3,
+        "features": [
+            "Off-road tires",
+            "Handlebar streamers",
+            "Adventure-ready"
+        ],
+        "description": "Conquer imaginary mountains with the Mountain Explorer toy bike. Equipped with off-road tires and handlebar streamers, it's adventure-ready for young explorers."
+    },
+    {
+        "type": "car",
+        "name": "City Cruiser",
+        "picture": "city_cruiser.jpg",
+        "price": 10.49,
+        "rating": 4.4,
+        "features": [
+            "Cityscape decals",
+            "Smooth-rolling wheels",
+            "Compact design"
+        ],
+        "description": "Navigate the urban landscape with the City Cruiser toy car. Adorned with cityscape decals, it features smooth-rolling wheels and a compact design for city-inspired play."
+    },
+    {
+        "type": "sports car",
+        "name": "Super Sonic Speedster",
+        "picture": "super_sonic_speedster.jpg",
+        "price": 18.99,
+        "rating": 4.9,
+        "features": [
+            "Turbo boost",
+            "Sleek aerodynamics",
+            "Responsive controls"
+        ],
+        "description": "Zoom into action with the Super Sonic Speedster toy sports car. With turbo boost, sleek aerodynamics, and responsive controls, it's designed for high-performance racing."
+    },
+    {
+        "type": "bike",
+        "name": "Cruiser Classic",
+        "picture": "cruiser_classic.jpg",
+        "price": 13.99,
+        "rating": 4.1,
+        "features": [
+            "Vintage design",
+            "Bell accessory",
+            "Comfortable ride"
+        ],
+        "description": "Experience timeless style with the Cruiser Classic toy bike. Its vintage design, bell accessory, and comfortable ride make it a classic choice for young riders."
+    },
+    {
+        "type": "car",
+        "name": "Robo Racer",
+        "picture": "robo_racer.jpg",
+        "price": 11.99,
+        "rating": 4.6,
+        "features": [
+            "Robotic sounds",
+            "Light-up eyes",
+            "Futuristic design"
+        ],
+        "description": "Embark on futuristic adventures with the Robo Racer toy car. Featuring robotic sounds, light-up eyes, and a futuristic design, it adds a touch of sci-fi to playtime."
+    },
+    {
+        "type": "sports car",
+        "name": "Aero Thunderbolt",
+        "picture": "aero_thunderbolt.jpg",
+        "price": 15.49,
+        "rating": 4.7,
+        "features": [
+            "Aerodynamic styling",
+            "Racing decals",
+            "Quick acceleration"
+        ],
+        "description": "Feel the rush with the Aero Thunderbolt toy sports car. Its aerodynamic styling, racing decals, and quick acceleration make it a top choice for aspiring race car drivers."
+    },
+    {
+        "type": "bike",
+        "name": "Galactic Explorer",
+        "picture": "galactic_explorer.jpg",
+        "price": 14.99,
+        "rating": 4.4,
+        "features": [
+            "Space-themed graphics",
+            "Detachable training wheels",
+            "Advenure beyond the stars"
+        ],
+        "description": "Embark on cosmic journeys with the Galactic Explorer toy bike. Adorned with space-themed graphics and detachable training wheels, it's ready for adventures beyond the stars."
+    },
+    {
+        "type": "car",
+        "name": "Vintage Roadster",
+        "picture": "vintage_roadster.jpg",
+        "price": 12.99,
+        "rating": 4.3,
+        "features": [
+            "Classic design",
+            "Rolling wheels",
+            "Metallic paint finish"
+        ],
+        "description": "Cruise in style with the Vintage Roadster toy car. Featuring a classic design, rolling wheels, and a metallic paint finish, it's a timeless addition to any playtime collection."
+    },
+    {
+        "type": "sports car",
+        "name": "Lightning Sprinter",
+        "picture": "lightning_sprinter.jpg",
+        "price": 17.99,
+        "rating": 4.8,
+        "features": [
+            "Electronic speed control",
+            "Lightning decals",
+            "Sleek racing profil"
+        ],
+        "description": "Race at the speed of lightning with the Lightning Sprinter toy sports car. Equipped with electronic speed control, lightning decals, and a sleek racing profile, it's a must-have for speed enthusiasts."
+    },
+    {
+        "type": "bike",
+        "name": "Jungle Explorer",
+        "picture": "jungle_explorer.jpg",
+        "price": 16.49,
+        "rating": 4.5,
+        "features": [
+            "Wildlife-inspired graphics",
+            "Off-road adventure tires",
+            "Advenure awaits"
+        ],
+        "description": "Embark on wild adventures with the Jungle Explorer toy bike. Featuring wildlife-inspired graphics and off-road adventure tires, it's the perfect choice for young explorers seeking jungle thrills."
+    },
+    {
+        "type": "car",
+        "name": "Fireball Fury",
+        "picture": "fireball_fury.jpg",
+        "price": 10.99,
+        "rating": 4.2,
+        "features": [
+            "Flame decals",
+            "Speedy acceleration",
+            "Bold color palette"
+        ],
+        "description": "Ignite the fun with the Fireball Fury toy car. Adorned with flame decals, featuring speedy acceleration, and a bold color palette, it's a fiery addition to any toy car collection."
+    },
+    {
+        "type": "sports car",
+        "name": "Skyline Dominator",
+        "picture": "skyline_dominator.jpg",
+        "price": 19.99,
+        "rating": 4.9,
+        "features": [
+            "Skyline-inspired design",
+            "Realistic engine sounds",
+            "High-performance"
+        ],
+        "description": "Conquer the skyline with the Skyline Dominator toy sports car. With a skyline-inspired design, realistic engine sounds, and high-performance features, it's the ultimate choice for urban racing."
+    },
+    {
+        "type": "bike",
+        "name": "Rocket Rider",
+        "picture": "rocket_rider.jpg",
+        "price": 15.99,
+        "rating": 4.6,
+        "features": [
+            "Rocket-themed design",
+            "Streamlined frame",
+            "Zoom into space"
+        ],
+        "description": "Blast off into adventures with the Rocket Rider toy bike. Featuring a rocket-themed design, streamlined frame, and the ability to zoom into space, it's perfect for young astronauts in training."
+    }
+]

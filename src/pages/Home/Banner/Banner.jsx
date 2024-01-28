@@ -18,30 +18,24 @@ const Banner = () => {
                     <h1 className="mb-5 text-5xl font-bold uppercase">
                         friendly and safe <br /> toys for your child
                     </h1>
-                    <div className="flex flex-col items-center gap-4 md:flex-row justify-center z-[-1]">
-                        <Link>
-                            <button className="w-fit flex items-center justify-center bg-gray-900 text-[#A7CAB1] py-2 px-4 gap-2 rounded-full uppercase text-xs font-bold tracking-widest">
-                                Our company{" "}
-                                <span className="w-6 h-6 p-1 flex items-center justify-center rounded-full bg-[#A7CAB1] text-white">
-                                    <FaArrowRight />
-                                </span>
-                            </button>
+                    <div className="flex flex-col items-center gap-4 md:flex-row justify-center z-10">
+                        <Link className="w-fit flex items-center justify-center bg-gray-900 text-[#A7CAB1] py-2 px-4 gap-2 rounded-full uppercase text-xs font-bold tracking-widest">
+                            Our company
+                            <FaArrowRight className="w-6 h-6 p-1 flex items-center justify-center rounded-full bg-[#A7CAB1] text-white" />
                         </Link>
-                        <Link>
-                            <button className="w-fit flex items-center justify-center border-2  text-[#A7CAB1] py-2 px-4 gap-2 rounded-full uppercase text-xs font-bold tracking-widest">
-                                online shop
-                                <span className="w-6 h-6 p-1 flex items-center justify-center rounded-full text-[#A7CAB1] bg-white">
-                                    <FaArrowRight />
-                                </span>
-                            </button>
+                        <Link
+                            to="/all-toys"
+                            className="w-fit flex items-center justify-center border-2  text-[#A7CAB1] py-2 px-4 gap-2 rounded-full uppercase text-xs font-bold tracking-widest"
+                        >
+                            online shop
+                            <FaArrowRight className="w-6 h-6 p-1 flex items-center justify-center rounded-full text-[#A7CAB1] bg-white" />
                         </Link>
                     </div>
                     <div className="flex justify-center relative">
                         <div className="border p-1 rounded-full absolute -bottom-24 md:-bottom-32 lg:-bottom-40">
-
-                        <button className="w-10 h-10 bg-[#310A31] rounded-full flex items-center justify-center">
-                            <FaArrowDownLong className="w-4 h-4" />
-                        </button>
+                            <button className="w-10 h-10 bg-[#310A31] rounded-full flex items-center justify-center">
+                                <FaArrowDownLong className="w-4 h-4" />
+                            </button>
                         </div>
                     </div>
                 </div>

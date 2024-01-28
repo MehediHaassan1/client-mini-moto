@@ -10,14 +10,17 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className="bg-neutral text-neutral-content">
-            <footer className="footer md:p-4 lg:p-10  max-w-7xl mx-auto">
-                <nav>
+        <div className="bg-neutral text-neutral-content ">
+            <footer className="footer md:p-4 lg:p-10  max-w-7xl mx-auto bg-neutral text-neutral-content ">
+                <nav className="">
                     <h6 className="footer-title">Quick Links</h6>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <Link  className="link link-hover" to="/">Home</Link>
+                    <Link  className="link link-hover" to="/all-toys">All Toys</Link>
+                    <Link  className="link link-hover" to="/my-toys">My Toys</Link>
+                    <Link  className="link link-hover" to="/add-toy">Add A Toy</Link>
+                    <Link  className="link link-hover" to="/blogs">Blogs</Link>
+                    <Link  className="link link-hover" to="/contact">Contact</Link>
+                    <Link  className="link link-hover" to="/login">Login</Link>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Product Categories</h6>
