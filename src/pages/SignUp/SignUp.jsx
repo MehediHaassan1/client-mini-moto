@@ -1,12 +1,15 @@
 import React, { useContext, useState } from "react";
 import { FaGooglePlusG, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../../context/Authorization";
 import toast from "react-hot-toast";
 
 const SignUp = () => {
     const [error, setError] = useState("");
     const [watch, setWatch] = useState(false);
+    let navigate = useNavigate();
+    let location = useLocation();
+    let from = location.state?.from?.pathname || "/";
 
     const { signUpUser, updateUserProfileInfo, signInWithGoogle } =
         useContext(UserContext);
@@ -45,6 +48,7 @@ const SignUp = () => {
                     if (user) {
                         toast.success("User created successfully!");
                         updateUserProfileInfo(fullName);
+                        navigate(from, { replace: true });
                     }
                 })
                 .catch((error) => setError(error.message));
@@ -61,11 +65,10 @@ const SignUp = () => {
                 const user = result.user;
                 if (user) {
                     toast.success("Successfully Login!");
+                    navigate(from, { replace: true });
                 }
             })
-            .catch(() => {
-               
-            });
+            .catch(() => {});
     };
 
     return (

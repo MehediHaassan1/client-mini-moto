@@ -1,13 +1,16 @@
 import React, { useContext, useState } from "react";
 import {} from "react-icons/fa";
 import { FaGooglePlusG } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../../context/Authorization";
 import toast from "react-hot-toast";
 
 const Login = () => {
     const { signInUser, signInWithGoogle } = useContext(UserContext);
     const [error, setError] = useState("");
+    let navigate = useNavigate();
+    let location = useLocation();
+    let from = location.state?.from?.pathname || "/";
 
     const handleLoginIn = (e) => {
         e.preventDefault();
@@ -26,7 +29,8 @@ const Login = () => {
                     const user = userCredential.user;
                     if (user) {
                         toast.success("User logged in successfully!");
-                    }   
+                        navigate(from, { replace: true });
+                    }
                 })
                 .catch((error) => {
                     const errorMessage = error.message;
@@ -41,6 +45,7 @@ const Login = () => {
                 const user = result.user;
                 if (user) {
                     toast.success("Successfully Login!");
+                    navigate(from, { replace: true });
                 }
             })
             .catch(() => {});
