@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { UserContext } from "../../../context/Authorization";
 import MyToy from "../MyToy/MyToy";
+import Swal from "sweetalert2";
 
 const MyToys = () => {
     const { user } = useContext(UserContext);
@@ -14,6 +15,39 @@ const MyToys = () => {
                 setMyToys(data);
             });
     }, [url]);
+
+    const handleDeleteItem = (_id) => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!",
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`http://localhost:5000/my-toys/${_id}`, {
+                    method: "DELETE",
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        console.log(data);
+                        if (data.deletedCount > 0) {
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your file has been deleted.",
+                                icon: "success",
+                            });
+                            const remaining = myToys.filter(
+                                (toy) => toy._id !== _id
+                            );
+                            setMyToys(remaining);
+                        }
+                    });
+            }
+        });
+    };
 
     return (
         <div className="max-w-7xl mx-auto">
@@ -29,10 +63,18 @@ const MyToys = () => {
                     <thead className="my-5 text-center">
                         <tr>
                             <th className="my-5"></th>
-                            <th className="border-b text-start md:ps-20">Name</th>
-                            <th className="border-b text-start md:ps-20">Type</th>
-                            <th className="border-b text-start md:ps-20">Quantity</th>
-                            <th className="border-b text-start md:ps-20">Action</th>
+                            <th className="border-b text-start md:ps-20">
+                                Name
+                            </th>
+                            <th className="border-b text-start md:ps-20">
+                                Type
+                            </th>
+                            <th className="border-b text-start md:ps-20">
+                                Quantity
+                            </th>
+                            <th className="border-b text-start md:ps-20">
+                                Action
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,6 +83,7 @@ const MyToys = () => {
                                 key={toy._id}
                                 toy={toy}
                                 index={index}
+                                handleDeleteItem={handleDeleteItem}
                             ></MyToy>
                         ))}
                     </tbody>

@@ -2,7 +2,7 @@ import React from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 
-const MyToy = ({ toy, index }) => {
+const MyToy = ({ toy, index, handleDeleteItem }) => {
     const navigate = useNavigate();
     const { _id, name, type, quantity, price, description } = toy;
 
@@ -49,7 +49,10 @@ const MyToy = ({ toy, index }) => {
                     >
                         Update
                     </button>
-                    <button className="btn btn-xs text-[#310A31] mx-1 font-bold bg-red-400 hover:bg-red-400">
+                    <button
+                        onClick={() => handleDeleteItem(_id)}   
+                        className="btn btn-xs text-[#310A31] mx-1 font-bold bg-red-400 hover:bg-red-400"
+                    >
                         Delete
                     </button>
                     <dialog id={`updateInfoModal/${_id}`} className="modal">
