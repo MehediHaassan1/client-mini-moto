@@ -1,21 +1,8 @@
-import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import { FaPlus } from "react-icons/fa6";
-import { FaMinus } from "react-icons/fa";
-import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 
 const ToyDetails = () => {
     const toy = useLoaderData();
-    const {
-        _id,
-        name,
-        picture,
-        price,
-        description,
-        features,
-        quantity,
-        seller,
-    } = toy;
+    const { _id, name, picture, price, description, quantity, seller } = toy;
 
     return (
         <div className="max-w-6xl mx-auto my-10">
@@ -40,25 +27,6 @@ const ToyDetails = () => {
                         </p>
                     </div>
                 </div>
-            </div>
-            <div>
-                <Tabs defaultFocus={false} className="">
-                    <TabList>
-                        <Tab>Description</Tab>
-                        <Tab>Features</Tab>
-                    </TabList>
-
-                    <TabPanel>
-                        <p className="md:w-1/2 lg:w-1/3">{description}</p>
-                    </TabPanel>
-                    <TabPanel>
-                        {features.map((item, index) => (
-                            <p key={index}>
-                                {index + 1}. {item}
-                            </p>
-                        ))}
-                    </TabPanel>
-                </Tabs>
             </div>
         </div>
     );

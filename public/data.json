@@ -7,11 +7,6 @@
         "rating": 4.5,
         "quantity": 25,
         "seller": "mehedi Hassan",
-        "features": [
-            "Pull-back action",
-            "Realistic design",
-            "Durable material"
-        ],
         "description": "The Speedy Racer is a sleek and fast toy car that comes with pull-back action for thrilling races. Its realistic design and durable material make it perfect for young car enthusiasts."
     },
     {
@@ -22,11 +17,6 @@
         "rating": 4.8,
         "quantity": 19,
         "seller": "mehedi Hassan",
-        "features": [
-            "Friction-powered",
-            "Flashing lights",
-            "Sounds effects"
-        ],
         "description": "Experience the excitement with the Turbo Charger GT, a friction-powered toy sports car. With flashing lights and sound effects, this car brings the thrill of a race track to your playroom."
     },
     {
@@ -37,11 +27,6 @@
         "rating": 4.2,
         "quantity": 21,
         "seller": "mehedi Hassan",
-        "features": [
-            "Pedal-powered",
-            "Adjustable seat",
-            "Sturdy construction"
-        ],
         "description": "Take on daring adventures with the Extreme Rider toy bike. This pedal-powered bike features an adjustable seat and sturdy construction for endless hours of imaginative play."
     },
     {
@@ -52,11 +37,6 @@
         "rating": 4.0,
         "quantity": 11,
         "seller": "mehedi Hassan",
-        "features": [
-            "Compact size",
-            "Easy to grip",
-            "Vibrant colors"
-        ],
         "description": "The Mini Cruiser is a compact and easy-to-grip toy car, perfect for little hands. Its vibrant colors add a playful touch, making it an ideal choice for young drivers."
     },
     {
@@ -67,11 +47,6 @@
         "rating": 4.7,
         "quantity": 25,
         "seller": "mehedi Hassan",
-        "features": [
-            "Remote-controlled",
-            "High-speed",
-            "LED headlights"
-        ],
         "description": "Unleash the power of speed with the Nitro Blaze remote-controlled toy sports car. Its high-speed capabilities and LED headlights make it a thrilling choice for racing enthusiasts."
     },
     {
@@ -82,11 +57,6 @@
         "rating": 4.3,
         "quantity": 14,
         "seller": "mehedi Hassan",
-        "features": [
-            "Off-road tires",
-            "Handlebar streamers",
-            "Adventure-ready"
-        ],
         "description": "Conquer imaginary mountains with the Mountain Explorer toy bike. Equipped with off-road tires and handlebar streamers, it's adventure-ready for young explorers."
     },
     {
@@ -97,11 +67,6 @@
         "rating": 4.4,
         "quantity": 9,
         "seller": "mehedi Hassan",
-        "features": [
-            "Cityscape decals",
-            "Smooth-rolling wheels",
-            "Compact design"
-        ],
         "description": "Navigate the urban landscape with the City Cruiser toy car. Adorned with cityscape decals, it features smooth-rolling wheels and a compact design for city-inspired play."
     },
     {
@@ -112,11 +77,6 @@
         "rating": 4.9,
         "quantity": 10,
         "seller": "mehedi Hassan",
-        "features": [
-            "Turbo boost",
-            "Sleek aerodynamics",
-            "Responsive controls"
-        ],
         "description": "Zoom into action with the Super Sonic Speedster toy sports car. With turbo boost, sleek aerodynamics, and responsive controls, it's designed for high-performance racing."
     },
     {
@@ -127,11 +87,6 @@
         "rating": 4.1,
         "quantity": 22,
         "seller": "mehedi Hassan",
-        "features": [
-            "Vintage design",
-            "Bell accessory",
-            "Comfortable ride"
-        ],
         "description": "Experience timeless style with the Cruiser Classic toy bike. Its vintage design, bell accessory, and comfortable ride make it a classic choice for young riders."
     },
     {
@@ -142,11 +97,6 @@
         "rating": 4.6,
         "quantity": 9,
         "seller": "mehedi Hassan",
-        "features": [
-            "Robotic sounds",
-            "Light-up eyes",
-            "Futuristic design"
-        ],
         "description": "Embark on futuristic adventures with the Robo Racer toy car. Featuring robotic sounds, light-up eyes, and a futuristic design, it adds a touch of sci-fi to playtime."
     },
     {
@@ -157,11 +107,6 @@
         "rating": 4.7,
         "quantity": 17,
         "seller": "mehedi Hassan",
-        "features": [
-            "Aerodynamic styling",
-            "Racing decals",
-            "Quick acceleration"
-        ],
         "description": "Feel the rush with the Aero Thunderbolt toy sports car. Its aerodynamic styling, racing decals, and quick acceleration make it a top choice for aspiring race car drivers."
     },
     {
@@ -172,11 +117,6 @@
         "rating": 4.4,
         "quantity": 19,
         "seller": "mehedi Hassan",
-        "features": [
-            "Space-themed graphics",
-            "Detachable training wheels",
-            "Advenure beyond the stars"
-        ],
         "description": "Embark on cosmic journeys with the Galactic Explorer toy bike. Adorned with space-themed graphics and detachable training wheels, it's ready for adventures beyond the stars."
     },
     {
@@ -187,11 +127,6 @@
         "rating": 4.3,
         "quantity": 12,
         "seller": "mehedi Hassan",
-        "features": [
-            "Classic design",
-            "Rolling wheels",
-            "Metallic paint finish"
-        ],
         "description": "Cruise in style with the Vintage Roadster toy car. Featuring a classic design, rolling wheels, and a metallic paint finish, it's a timeless addition to any playtime collection."
     },
     {
@@ -202,11 +137,6 @@
         "rating": 4.8,
         "quantity": 10,
         "seller": "mehedi Hassan",
-        "features": [
-            "Electronic speed control",
-            "Lightning decals",
-            "Sleek racing profil"
-        ],
         "description": "Race at the speed of lightning with the Lightning Sprinter toy sports car. Equipped with electronic speed control, lightning decals, and a sleek racing profile, it's a must-have for speed enthusiasts."
     },
     {
@@ -217,11 +147,6 @@
         "rating": 4.5,
         "quantity": 21,
         "seller": "mehedi Hassan",
-        "features": [
-            "Wildlife-inspired graphics",
-            "Off-road adventure tires",
-            "Advenure awaits"
-        ],
         "description": "Embark on wild adventures with the Jungle Explorer toy bike. Featuring wildlife-inspired graphics and off-road adventure tires, it's the perfect choice for young explorers seeking jungle thrills."
     },
     {
@@ -232,11 +157,6 @@
         "rating": 4.2,
         "quantity": 16,
         "seller": "mehedi Hassan",
-        "features": [
-            "Flame decals",
-            "Speedy acceleration",
-            "Bold color palette"
-        ],
         "description": "Ignite the fun with the Fireball Fury toy car. Adorned with flame decals, featuring speedy acceleration, and a bold color palette, it's a fiery addition to any toy car collection."
     },
     {
@@ -247,11 +167,6 @@
         "rating": 4.9,
         "quantity": 0,
         "seller": "mehedi Hassan",
-        "features": [
-            "Skyline-inspired design",
-            "Realistic engine sounds",
-            "High-performance"
-        ],
         "description": "Conquer the skyline with the Skyline Dominator toy sports car. With a skyline-inspired design, realistic engine sounds, and high-performance features, it's the ultimate choice for urban racing."
     },
     {
@@ -262,11 +177,6 @@
         "rating": 4.6,
         "quantity": 16,
         "seller": "mehedi Hassan",
-        "features": [
-            "Rocket-themed design",
-            "Streamlined frame",
-            "Zoom into space"
-        ],
         "description": "Blast off into adventures with the Rocket Rider toy bike. Featuring a rocket-themed design, streamlined frame, and the ability to zoom into space, it's perfect for young astronauts in training."
     }
 ]
