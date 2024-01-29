@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import { FaGooglePlusG, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../context/Authorization";
 import toast from "react-hot-toast";
@@ -41,9 +41,10 @@ const SignUp = () => {
             signUpUser(email, password)
                 .then((result) => {
                     const user = result.user;
-                    console.log(user);
-                    toast.success("User created successfully!");
-                    updateUserProfileInfo(fullName)
+                    if(user){
+                        toast.success("User created successfully!");
+                        updateUserProfileInfo(fullName);
+                    }
                 })
                 .catch((error) => setError(error.message));
         }
@@ -195,6 +196,19 @@ const SignUp = () => {
                                 </p>
                             </div>
                         </form>
+                        <div className="mt-7 grid grid-cols-3 items-center text-gray-500">
+                            <hr className="border-gray-500" />
+                            <p className="text-center text-sm">OR</p>
+                            <hr className="border-gray-500" />
+                        </div>
+
+                        <button className="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300 ">
+                            <span className="ml-4 flex gap-5">
+                                {" "}
+                                <FaGooglePlusG className="h-6 w-6" /> Login with
+                                Google
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
