@@ -19,6 +19,8 @@
 .menu{
     display: flex; 
     flex-direction: row;
+    position: relative;
+    z-index: 1000;
 }
 
 #check {
