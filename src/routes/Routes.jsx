@@ -9,6 +9,8 @@ import ToyDetails from "../pages/ToyDetails/ToyDetails/ToyDetails";
 import AddToy from "../pages/AddToy/AddToy";
 import MyToys from "../pages/MyToys/MyToys/MyToys";
 import PrivetRoute from "./PrivetRoute";
+import NotFound from "../pages/Shared/NotFound/NotFound";
+import Blogs from "../pages/Blogs/Blogs";
 
 const router = createBrowserRouter([
     {
@@ -22,7 +24,7 @@ const router = createBrowserRouter([
             {
                 path: "all-toys",
                 element: <AllToys />,
-                loader: () => fetch("http://localhost:5000/all-toys"),
+                loader: () => fetch("https://mini-moto.onrender.com/all-toys"),
             },
             {
                 path: "details/:id",
@@ -32,7 +34,9 @@ const router = createBrowserRouter([
                     </PrivetRoute>
                 ),
                 loader: ({ params }) =>
-                    fetch(`http://localhost:5000/all-toys/${params.id}`),
+                    fetch(
+                        `https://mini-moto.onrender.com/all-toys/${params.id}`
+                    ),
             },
             {
                 path: "add-toy",
@@ -55,6 +59,10 @@ const router = createBrowserRouter([
                 element: <Contact />,
             },
             {
+                path: "blogs",
+                element: <Blogs/>,
+            },
+            {
                 path: "login",
                 element: <Login />,
             },
@@ -63,6 +71,10 @@ const router = createBrowserRouter([
                 element: <SignUp />,
             },
         ],
+    },
+    {
+        path: "*",
+        element: <NotFound></NotFound>,
     },
 ]);
 

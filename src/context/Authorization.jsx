@@ -55,7 +55,7 @@ const Authorization = ({ children }) => {
                 setUser(currentUser);
                 setLoading(false);
                 const loggedUser = { email: currentUser?.email };
-                fetch(`http://localhost:5000/web-access-token`, {
+                fetch(`https://mini-moto.onrender.com/web-access-token`, {
                     method: "POST",
                     headers: {
                         "content-type": "application/json",
@@ -87,7 +87,7 @@ const Authorization = ({ children }) => {
         signOutUser,
         updateUserProfileInfo,
         signInWithGoogle,
-        setLoading
+        setLoading,
     };
     return (
         <UserContext.Provider value={authInfo}>{children}</UserContext.Provider>

@@ -49,7 +49,7 @@ const AddToy = () => {
             sellerEmail: user?.email,
         };
 
-        fetch("http://localhost:5000/all-toys", {
+        fetch("https://mini-moto.onrender.com/all-toys", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

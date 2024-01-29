@@ -15,7 +15,7 @@ const MyToy = ({ toy, index, handleDeleteItem }) => {
 
         const updatedInfo = { price, quantity, description };
 
-        fetch(`http://localhost:5000/my-toys/${_id}`, {
+        fetch(`https://mini-moto.onrender.com/my-toys/${_id}`, {
             method: "PATCH",
             headers: {
                 "content-type": "application/json",
@@ -50,7 +50,7 @@ const MyToy = ({ toy, index, handleDeleteItem }) => {
                         Update
                     </button>
                     <button
-                        onClick={() => handleDeleteItem(_id)}   
+                        onClick={() => handleDeleteItem(_id)}
                         className="btn btn-xs text-[#310A31] mx-1 font-bold bg-red-400 hover:bg-red-400"
                     >
                         Delete

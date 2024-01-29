@@ -11,10 +11,10 @@ const AllToys = () => {
     const [allSportsCar, setAllSportsCar] = useState([]);
     const [allBike, setAllBike] = useState([]);
 
-    const carUrl = "http://localhost:5000/cars?car=car";
+    const carUrl = "https://mini-moto.onrender.com/cars?car=car";
     const sportsCarUrl =
-        "http://localhost:5000/sports-car?sportsCar=sports_car";
-    const bikeUrl = "http://localhost:5000/bike?bike=bike";
+        "https://mini-moto.onrender.com/sports-car?sportsCar=sports_car";
+    const bikeUrl = "https://mini-moto.onrender.com/bike?bike=bike";
     const getToyItemByTag = (url, tag) => {
         if (tag === "car") {
             fetch(url)
@@ -28,8 +28,7 @@ const AllToys = () => {
                 .then((data) => {
                     setAllSportsCar(data);
                 });
-        }
-        else if (tag === "bike") {
+        } else if (tag === "bike") {
             fetch(url)
                 .then((res) => res.json())
                 .then((data) => {
@@ -69,21 +68,21 @@ const AllToys = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3 my-10">
+                    <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3 my-10">
                         {allCars.map((toy) => (
                             <Toy key={toy._id} toy={toy}></Toy>
                         ))}
                     </div>
                 </TabPanel>
                 <TabPanel>
-                <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3 my-10">
+                    <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3 my-10">
                         {allSportsCar.map((toy) => (
                             <Toy key={toy._id} toy={toy}></Toy>
                         ))}
                     </div>
                 </TabPanel>
                 <TabPanel>
-                <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3 my-10">
+                    <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3 my-10">
                         {allBike.map((toy) => (
                             <Toy key={toy._id} toy={toy}></Toy>
                         ))}

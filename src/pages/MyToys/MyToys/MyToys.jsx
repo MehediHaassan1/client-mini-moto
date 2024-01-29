@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const MyToys = () => {
     const { user, setLoading } = useContext(UserContext);
-    const url = `http://localhost:5000/my-toys?email=${user?.email}`;
+    const url = `https://mini-moto.onrender.com/my-toys?email=${user?.email}`;
     const [myToys, setMyToys] = useState([]);
 
     useEffect(() => {
@@ -34,7 +34,7 @@ const MyToys = () => {
             confirmButtonText: "Yes, delete it!",
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/my-toys/${_id}`, {
+                fetch(`https://mini-moto.onrender.com/my-toys/${_id}`, {
                     method: "DELETE",
                 })
                     .then((res) => res.json())
