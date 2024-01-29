@@ -4,17 +4,24 @@ import MyToy from "../MyToy/MyToy";
 import Swal from "sweetalert2";
 
 const MyToys = () => {
-    const { user } = useContext(UserContext);
+    const { user, setLoading } = useContext(UserContext);
     const url = `http://localhost:5000/my-toys?email=${user?.email}`;
     const [myToys, setMyToys] = useState([]);
 
     useEffect(() => {
-        fetch(url)
+        fetch(url, {
+            method: "GET",
+            headers: {
+                authorization: `Bearer ${localStorage.getItem(
+                    "mini-moto-web-token"
+                )}`,
+            },
+        })
             .then((res) => res.json())
             .then((data) => {
                 setMyToys(data);
             });
-    }, [url]);
+    }, [setLoading, url]);
 
     const handleDeleteItem = (_id) => {
         Swal.fire({

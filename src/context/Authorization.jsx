@@ -57,7 +57,7 @@ const Authorization = ({ children }) => {
                 const loggedUser = { email: currentUser?.email };
                 fetch(`http://localhost:5000/web-access-token`, {
                     method: "POST",
-                    header: {
+                    headers: {
                         "content-type": "application/json",
                     },
                     body: JSON.stringify(loggedUser),
@@ -69,6 +69,7 @@ const Authorization = ({ children }) => {
                     });
             } else {
                 setUser(null);
+                setLoading(false);
                 localStorage.removeItem("mini-moto-web-token");
             }
         });
@@ -86,6 +87,7 @@ const Authorization = ({ children }) => {
         signOutUser,
         updateUserProfileInfo,
         signInWithGoogle,
+        setLoading
     };
     return (
         <UserContext.Provider value={authInfo}>{children}</UserContext.Provider>
