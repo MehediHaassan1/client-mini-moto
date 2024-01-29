@@ -66,7 +66,7 @@ const AddToy = () => {
                         showConfirmButton: false,
                         timer: 2000,
                     });
-                    navigate('/my-toys')
+                    navigate("/my-toys");
                 }
             });
     };
@@ -215,6 +215,8 @@ const AddToy = () => {
                                     id="description"
                                     name="description"
                                     required
+                                    rows="4"
+                                    cols="50"
                                     className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                                 ></textarea>
                             </div>

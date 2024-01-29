@@ -12,15 +12,13 @@ import {
 import app from "../firebase/firebase.confiq";
 
 const auth = getAuth(app);
-const googleProvider = new GoogleAuthProvider();    
+const googleProvider = new GoogleAuthProvider();
 
 export const UserContext = createContext(null);
 
 const Authorization = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
-
-    console.log(user);
 
     const signUpUser = (email, password) => {
         setLoading(true);
@@ -46,10 +44,10 @@ const Authorization = ({ children }) => {
             .catch((error) => {});
     };
 
-    const signInWithGoogle = () =>{
+    const signInWithGoogle = () => {
         setLoading(true);
-        return signInWithPopup(auth, googleProvider)
-    }
+        return signInWithPopup(auth, googleProvider);
+    };
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -68,7 +66,7 @@ const Authorization = ({ children }) => {
         signInUser,
         signOutUser,
         updateUserProfileInfo,
-        signInWithGoogle
+        signInWithGoogle,
     };
     return (
         <UserContext.Provider value={authInfo}>{children}</UserContext.Provider>

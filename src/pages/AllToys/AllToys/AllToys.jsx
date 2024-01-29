@@ -63,7 +63,7 @@ const AllToys = () => {
 
                 <TabPanel>
                     <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3 my-10">
-                        {allToys.map((toy) => (
+                        {allToys.slice(0, 12).map((toy) => (
                             <Toy key={toy._id} toy={toy}></Toy>
                         ))}
                     </div>
