@@ -3,6 +3,8 @@ import {
     getAuth,
     createUserWithEmailAndPassword,
     onAuthStateChanged,
+    updateProfile,
+    signOut,
 } from "firebase/auth";
 import app from "../firebase/firebase.confiq";
 
@@ -21,6 +23,20 @@ const Authorization = ({ children }) => {
         return createUserWithEmailAndPassword(auth, email, password);
     };
 
+    const signOutUser = () =>{
+        return signOut(auth);
+    }
+
+    const updateUserProfileInfo = (name, photo, phone) => {
+        updateProfile(auth.currentUser, {
+            displayName: name,
+            photoURL: photo || "",
+            phoneNumber: phone || "",
+        })
+            .then(() => {})
+            .catch((error) => {});
+    };
+
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
@@ -31,7 +47,7 @@ const Authorization = ({ children }) => {
         };
     }, []);
 
-    const authInfo = { user, loading, signUpUser };
+    const authInfo = { user, loading, signUpUser,signOutUser, updateUserProfileInfo };
     return (
         <UserContext.Provider value={authInfo}>{children}</UserContext.Provider>
     );

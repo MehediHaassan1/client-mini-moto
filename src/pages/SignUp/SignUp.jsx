@@ -8,7 +8,7 @@ const SignUp = () => {
     const [error, setError] = useState("");
     const [watch, setWatch] = useState(false);
 
-    const { signUpUser } = useContext(UserContext);
+    const { signUpUser, updateUserProfileInfo } = useContext(UserContext);
 
     const handleSignUp = (e) => {
         e.preventDefault();
@@ -42,8 +42,8 @@ const SignUp = () => {
                 .then((result) => {
                     const user = result.user;
                     console.log(user);
-                    user.displayName = fullName;
                     toast.success("User created successfully!");
+                    updateUserProfileInfo(fullName)
                 })
                 .catch((error) => setError(error.message));
         }

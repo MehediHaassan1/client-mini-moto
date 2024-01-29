@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./MainNavbar.css";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import logo from "../../../../assets/logo.svg";
+import { UserContext } from "../../../../context/Authorization";
+import toast from "react-hot-toast";
 
 const MainNavbar = () => {
+    const { user, signOutUser } = useContext(UserContext);
+    const handleSignOutUser = () => {
+        signOutUser()
+            .then(() => {
+                toast.success("Logout successfully!");
+            })
+            .catch(() => {});
+    };
     return (
         <div className=" sticky top-0 bg-white">
             <header className="max-w-7xl mx-auto">
@@ -18,43 +28,36 @@ const MainNavbar = () => {
 
                         <span className="menu flex [&>li]:pl-8 [&>li>a]:text-center [&>li>a]:relative [&>li>a]:transition [&>li>a]:duration-200 [&>li>a]:ease-in-out [&>li>a]:font-medium [&>li>a]:text-lg">
                             <li>
-                                <Link to="/">
-                                    Home
-                                </Link>
+                                <Link to="/">Home</Link>
+                            </li>
+                            {user && (
+                                <>
+                                    <li>
+                                        <Link to="/all-toys">All Toys</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/my-toys">My Toys</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/add-toy">Add A Toy</Link>
+                                    </li>
+                                </>
+                            )}
+                            <li>
+                                <Link to="/blogs">Blogs</Link>
                             </li>
                             <li>
-                                <Link
-                                
-                                    to="/all-toys"
-                                >
-                                    All Toys
-                                </Link>
+                                <Link to="/contact">Contact</Link>
                             </li>
-                            <li>
-                                <Link to="/my-toys">
-                                    My Toys
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/add-toy">
-                                    Add A Toy
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/blogs">
-                                    Blogs
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/contact">
-                                    Contact
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/login">
-                                    Login
-                                </Link>
-                            </li>
+                            {user ? (
+                                <li onClick={handleSignOutUser}>
+                                    <Link>Logout</Link>
+                                </li>
+                            ) : (
+                                <li>
+                                    <Link to="/login">Login</Link>
+                                </li>
+                            )}
                             <label htmlFor="check" className="close-menu">
                                 <RxCross2 />
                             </label>
