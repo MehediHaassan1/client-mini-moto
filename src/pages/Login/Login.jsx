@@ -6,7 +6,7 @@ import { UserContext } from "../../context/Authorization";
 import toast from "react-hot-toast";
 
 const Login = () => {
-    const { signInUser } = useContext(UserContext);
+    const { signInUser, signInWithGoogle } = useContext(UserContext);
     const [error, setError] = useState("");
 
     const handleLoginIn = (e) => {
@@ -34,6 +34,17 @@ const Login = () => {
                     setError(errorMessage);
                 });
         }
+    };
+
+    const handleSignInWithGoogle = () => {
+        signInWithGoogle()
+            .then((result) => {
+                const user = result.user;
+                if (user) {
+                    toast.success("Successfully Login!");
+                }
+            })
+            .catch(() => {});
     };
 
     return (
@@ -103,7 +114,10 @@ const Login = () => {
                         <hr className="border-gray-500" />
                     </div>
 
-                    <button className="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300 ">
+                    <button
+                        onClick={handleSignInWithGoogle}
+                        className="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300 "
+                    >
                         <span className="ml-4 flex gap-5">
                             {" "}
                             <FaGooglePlusG className="h-6 w-6" /> Login with

@@ -8,7 +8,8 @@ const SignUp = () => {
     const [error, setError] = useState("");
     const [watch, setWatch] = useState(false);
 
-    const { signUpUser, updateUserProfileInfo } = useContext(UserContext);
+    const { signUpUser, updateUserProfileInfo, signInWithGoogle } =
+        useContext(UserContext);
 
     const handleSignUp = (e) => {
         e.preventDefault();
@@ -41,7 +42,7 @@ const SignUp = () => {
             signUpUser(email, password)
                 .then((result) => {
                     const user = result.user;
-                    if(user){
+                    if (user) {
                         toast.success("User created successfully!");
                         updateUserProfileInfo(fullName);
                     }
@@ -52,6 +53,19 @@ const SignUp = () => {
 
     const handleWatch = () => {
         setWatch(!watch);
+    };
+
+    const handleSignInWithGoogle = () => {
+        signInWithGoogle()
+            .then((result) => {
+                const user = result.user;
+                if (user) {
+                    toast.success("Successfully Login!");
+                }
+            })
+            .catch(() => {
+               
+            });
     };
 
     return (
@@ -202,11 +216,14 @@ const SignUp = () => {
                             <hr className="border-gray-500" />
                         </div>
 
-                        <button className="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300 ">
+                        <button
+                            onClick={handleSignInWithGoogle}
+                            className="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300 "
+                        >
                             <span className="ml-4 flex gap-5">
                                 {" "}
-                                <FaGooglePlusG className="h-6 w-6" /> Login with
-                                Google
+                                <FaGooglePlusG className="h-6 w-6" /> Signin
+                                with Google
                             </span>
                         </button>
                     </div>
