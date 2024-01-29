@@ -6,7 +6,7 @@ const Gallery = () => {
             <div className="text-center my-10">
                 <h1 className="text-5xl capitalize font-bold">our Gallery</h1>  
             </div>
-            <div className="max-w-screen-2xl mx-auto px-4 py-16 lg:py-24 relative bg-gray-50">
+            <div className="max-w-screen-2xl mx-auto px-4 py-16 lg:py-24 relative bg-gray-50 -z-10">
                 <div className="flex flex-col md:flex-row gap-2">
                     <div className="flex flex-1 flex-col gap-2">
                         <div className="flex flex-1 flex-col">

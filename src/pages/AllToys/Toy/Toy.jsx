@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Toy = ({ toy }) => {
-    const { _id, name, picture, rating, price } = toy;
+    const { _id, name, picture, rating, price, quantity } = toy;
     return (
         <div className="max-w-md w-full bg-gray-900 shadow-lg rounded-xl p-6 my-5">
             <div className="h-60 w-68 mb-3">
@@ -32,8 +32,16 @@ const Toy = ({ toy }) => {
                         <h2 className="text-lg mr-auto cursor-pointer text-gray-200 hover:text-purple-500 truncate ">
                             {name}
                         </h2>
-                        <div className="flex items-center bg-green-400 text-white text-xs px-2 py-1 ml-3 rounded-lg">
-                            INSTOCK
+                        <div>
+                            {quantity > 0 ? (
+                                <div className="flex items-center bg-green-400 text-white text-xs px-2 py-1 ml-3 rounded-lg">
+                                    INSTOCK
+                                </div>
+                            ) : (
+                                <div className="flex items-center bg-red-400 text-white text-xs px-2 py-1 ml-3 rounded-lg">
+                                    OUTSTOCK
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -44,7 +52,7 @@ const Toy = ({ toy }) => {
             <div className="flex space-x-2 text-sm font-medium justify-start ">
                 <button className="transition ease-in duration-300 inline-flex items-center text-sm my-2 md:mb-0 bg-[#A7CAB1] px-5 py-1 hover:shadow-lg tracking-wider text-gray-900 rounded-full hover:bg-[#88B7B5] font-bold  ">
                     <Link to={`/details/${_id}`}>
-                        <span>Add Cart</span>
+                        <span>Details</span>
                     </Link>
                 </button>
             </div>

@@ -26,8 +26,7 @@ const Login = () => {
                     const user = userCredential.user;
                     if (user) {
                         toast.success("User logged in successfully!");
-                    }
-                    // ...
+                    }   
                 })
                 .catch((error) => {
                     const errorMessage = error.message;
